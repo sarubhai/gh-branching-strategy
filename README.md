@@ -248,7 +248,7 @@ git checkout -b feature/search-fix
 git add search.html
 git add README.md
 git commit -m "Add search.html, README.md"
-git push origin feature/search
+git push origin feature/search-fix
 ```
 
 **5.2.** Create a PR in GitHub from `feature/search-fix → dev`
