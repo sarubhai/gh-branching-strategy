@@ -1,4 +1,3 @@
-
 ## Branching Strategy & Workflow
 
 1. **Branches**:
@@ -288,6 +287,8 @@ gh pr create --head release/v1.1 --base stg --title "Release v1.1 to stg" --body
 git checkout stg
 git pull origin stg
 git merge --no-ff release/v1.1 -m "Merge release/v1.1 into stg"
+git add .
+git commit -m "Fix Conflict"
 git push origin stg
 ```
 
@@ -303,6 +304,8 @@ gh pr create --head release/v1.1 --base main --title "Release v1.1 to main" --bo
 git checkout main
 git pull origin main
 git merge --no-ff release/v1.1 -m "Merge release/v1.1 into main"
+git add .
+git commit -m "Fix Conflict"
 git push origin main
 ```
 
